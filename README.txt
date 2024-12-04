@@ -1,6 +1,6 @@
 1. Csépke Donát
 
-2. 
+2. A weboldalam domainje: https://csepkedonat.github.io/webfejlesztes_beadando/
 
 3. A Bemer cégről készítettem, az egyik értékesítőnek egy személyes weboldalat. 
 Az oldalam bemutatja mi is az a Bemer, e mellett tartalmazza az értékesítő rövid bemutatkozását, illetve elérhetőségét.
