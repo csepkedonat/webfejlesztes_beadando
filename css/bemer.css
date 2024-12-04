@@ -1,0 +1,240 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #464646;
+}
+html, body{
+    padding: 0;
+    margin:0;
+    scroll-behavior: smooth;
+}
+header{
+    flex: 1 1 100%;
+    background-color: lightgrey;
+    background-image: url(../kepek/bemer_logo2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    padding: 12%;
+    border-bottom: 3px solid black;
+}
+h1{
+    margin:0;
+    padding:0;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px solid black;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:5px;
+    padding:0px;
+}
+nav ul li{
+    list-style:none;
+    padding: 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #ff6400;
+    background-color: lightgrey;
+    text-align: center;
+    
+}
+article{
+    margin:5px;
+    padding:5px;
+    color: lightgray;
+} 
+.kerdo  {
+    margin:5px;
+    padding:5px;
+    color: lightgray;
+}
+h1, h2, h3{
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: lightgray;
+}
+.techh2{
+    margin:2% 0 1% 0;
+}
+section{
+    text-align: center;
+}
+.kep img{
+    
+    width: 98%;
+    margin: auto;
+    border-radius: 15px;
+}
+footer{
+    background-color: lightgrey;
+    margin:0;
+    padding:0;
+    color: black;
+    padding:5px;
+    border-top: 2px solid black;
+}
+div section .rolunks.kep{
+    align-items: center;
+}
+nav ul li a:hover{
+color:white;
+background-color:#ff6400;
+border: 2px solid black;
+}
+label.error{
+position: absolute;
+color: #ff6400;
+padding: 6px;
+}
+#active{
+color:white;
+background-color:#ff6400;
+border: 2px solid black;
+}
+#para{
+    margin:50px 5px 30px 5px;
+}
+form label {
+    margin-bottom: 15px;
+    margin-top: 3px;
+}
+
+form input, form select, form textarea {
+    padding: 5px; /* Extra belső tér a mezőkön belül */
+    border-radius: 5px;
+    border: 1px solid black; 
+    margin-bottom: 15px;
+    margin-top: 3px;
+}
+#vonal{
+    border: 1px solid black;
+}
+.kerdo{
+    border: 1px solid white;
+    text-align: center;
+    margin: 4% 6% 4% 6%;
+}
+#szinValaszto{
+    text-align: center;
+    margin-left: 48%;
+}
+dd{
+    margin-bottom: 5px;
+}
+/* Galéria */
+    .slider {
+    width: 80%;
+    min-width: 300px;
+    margin: 30px auto;
+    object-fit: cover;
+    }
+    .slick-slide {margin: 20px 5px;}
+    .slick-slide img {width: 100%; height: 200px; object-fit: cover; border-radius: 15px;}
+    .slick-prev:before, .slick-next:before {
+    color: black;
+    }
+    .slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+    }
+    .slick-active { opacity: .5; }
+    .slick-current { opacity: 1; }
+
+    @media only screen and (min-width: 600px) {
+        .kep img {
+            width: 88%;
+        }
+        nav ul li {
+            padding: 2px;
+        }
+        nav ul {
+            flex-wrap:nowrap;
+        }
+        nav ul li a {
+            width: 100px;
+            height: 100px;
+            font-size: 14px;
+        }
+        .slick-slide img {width: 100%; height: 250px;}
+    }
+
+    @media only screen and (min-width: 768px) {
+        header{
+            background-size: contain;
+            padding: 6%;
+        }
+        nav ul li{
+            padding: 2% 10% 2% 10%;
+        }
+        nav ul li a{
+            width: 150px;
+            height: 150px;
+            font-size: 1.4em;
+        }
+        .content-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        article {
+            flex:  0 0 58%;
+        }
+        .rolunks.kep {
+            flex:  0 0 38%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+
+        .techh2{
+            text-align: center;
+        }
+        
+        .techbal, .techjobb{
+            flex: 0 0 48%;
+            margin-top: 0;
+            margin-bottom: 3%;
+        }
+        .tapbal{
+            flex: 0 0 73%;
+            margin-top: 0;
+            margin-bottom: 3%;
+        }
+        .tapjobb{
+            flex: 0 0 23%;
+            margin-top: 0;
+            margin-bottom: 3%;
+        }
+        #para{
+            text-align: center;
+            padding: 3px;
+            background-color: rgb(255, 255, 255, 0.1);
+        }
+        .kerdo{
+            margin: 4% 20% 4% 20%
+        }
+    }
+

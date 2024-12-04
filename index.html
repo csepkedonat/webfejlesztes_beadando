@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bemer.css" rel="stylesheet">
+    <title>Rólunk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="kepek/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="kepek/favicon.ico" type="image/x-icon">
+    <script src="javascript/bemer.js"></script>
+    <script src="javascript/jquery-3.7.1.js"></script>
+    <script src="javascript/jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script class="vali">
+        $(document).ready(function(){
+                $("#myform").validate({
+        rules: {
+         Kor:{
+            required:true,
+         },
+         Panaszok:{
+            required:true,
+         },
+         Tel:{
+            required:true,
+        },
+         Email:{
+            required:true,
+            email:true,
+         },
+         Elfogad:{
+            required:true,
+         },
+        },
+        messages: {
+        Kor: "- Kérem adja meg a születési idejét!",
+        Panaszok: "- Kérem adjon meg legalább egy panaszt!",
+        Egeszseg: "- Kérem válasszon egyet!",
+        Tel: "- Kérem adja meg a telefonszámát!",
+        Email: {
+            required: "- Kérem adja meg az E-mail címét!",
+            email: "- Kérem valódi E-mail címet adjon meg!",
+        },
+        Elfogad: "- Kérlek fogadd el a felhasználói feltételeket!"
+        },
+       });
+     });
+        
+    </script>
+</head>
+
+<body>
+    <header>
+        
+    </header>
+    <nav id="nav-bar">
+        <ul>
+            <li><a href="#" id="active">Rólunk</a></li>
+            <li><a href="technologia.html">Technológia</a></li>
+            <li><a href="termekek.html">Termékek</a></li>
+            <li><a href="tapasztalatok.html">Tapasztalatok</a></li>
+            <li><a href="kapcsolat.html">Kapcsolat</a></li>
+        </ul>
+    </nav>
+
+    <div class="content-container">
+
+    <article>
+        <h1>Rólunk</h1>
+        <hr>
+        <p>
+            A BEMER Int. AG egy orvostechnológiai vállalat, amely korlátozott mikrokeringés esetén alkalmazható termékeket gyárt. 1998 óta kutatunk és fejlesztünk szabadalmaztatott alkalmazási módszereket ezen a területen.
+            A BEMER története 1998-ban kezdődik egy kis irodában az osztrák Vorarlbergben: Peter Gleim megalapítja az INNOMED International AG-t és teljes erővel a mikrocirkuláció, ekkor még alig ismert témájára összpontosít. Ezt példátlan siker történet követi lenyűgöző mérföldkövekkel. A 2010-ben BEMER Int. AG-ra átnevezett orvostechnikai cég mára több mint 30 000 értékesítési partnert számlál világszerte a korlátozott mikrocirkulációs alkalmazási eljárások területén.
+        </p>
+        <hr>
+<h2>Tanúsított minőségirányítási rendszer</h2>
+<hr>
+<p>
+A DIN ISO 13485:2016 szabvány szerint
+A BEMER készülékeket a gyógyászati termékek közé sorolják, hatékonyak, biztonságosak és hatásosak. A több ezer elégedett használó világszerte a legjobb megerősítése annak, amit ezért az elhivatottságért kívánhatunk.
+A Medical Device Single Audit program résztvevőjeként a BEMER Int. AG megerősíti, hogy betartja az orvostechnikai ágazat jelenleg legmagasabb, világszerte érvényes minőségi előírásait. A középpontban ügyfeleink lehető legjobb és a legmagasabb minőségi előírások szerinti kiszolgálása áll.
+
+</p>
+<hr>
+       
+    </article>
+
+    <section class="rolunks kep">
+        <img src="kepek/rolunk1.png" alt="Tanúsított minőségirányítási rendszer">
+    </section>
+
+</div>
+
+<hr id="vonal">
+
+<div class="kerdo">
+    <p><h2>Rólad</h2></p>
+    <hr>
+
+    <form action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php" method="post" id="myform">
+        <label for="Nem">Neme:</label><br>
+        Nő:
+        <input type="radio" name="Nem" value="nő">
+        Férfi:
+        <input type="radio" name="Nem" value="férfi">
+        <br>
+        <label for="szinValaszto" id="szinCimke" style="display: none;">Válaszd ki a matracod színét:</label>
+        <input type="color" id="szinValaszto" style="display: none;">
+        <br>
+        <label for="Kor">Születési idő:</label><br>
+        <input type="date" name="Kor" id="Kor">
+        <br>
+        <label for="Panaszok">Milyen panaszok esetén szeretné alkalmazni a BEMER terápiát?</label><br>
+        <input type="text" name="Panaszok" id="Panaszok">
+        <br>
+        <label for="Egeszseg">Hogyan jellemezné általános egészségi állapotát?</label><br>
+        <select id="Egeszseg">
+            <option value="Kiváló">Kiváló</option>
+            <option value="Jó">Jó</option>
+            <option value="Átlagos">Átlagos</option>
+            <option value="Átlag alatti">Átlag alatti</option>
+            <option value="Rossz">Rossz</option>
+        </select>
+        <br>
+        <label for="Alvas">Nehezen alszik el? (1-Könnyen | 5-Nehezen)</label><br>
+        <input type="range" name="Alvas" id="Alvas" min="1" max="5" step="1"><br>
+        <label for="Tel">Telefonszáma:</label><br>
+        <input type="tel" name="Tel" id="Tel"><br>
+        <label for="Email">E-mail:</label><br>
+        <input type="email" name="Email" id="Email"><br>
+        <label for="Elfogad">Felhasználó feltételek:</label><br>
+        <input type="checkbox" name="Elfogad" id="Elfogad"><br>
+        <input type="submit" value="Elüldés">
+        <input type="reset" value="Törlés">
+    </form>
+
+</div>
+
+    <footer>
+        <p>
+            Telefonon is kereshetsz: 06306064106 
+            <br>
+            Email címem: csanita33@gmail.com
+
+        </p>
+    </footer>
+    
+</body>
+</html>
